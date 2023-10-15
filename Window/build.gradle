@@ -47,12 +47,12 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            maven(MavenPublication) {
+            release(MavenPublication) {
                 from components.release
 
                 groupId = 'com.github.MrCo0oder'
                 artifactId = 'window'
-                version = '1.0.5'
+                version = '1.0.6'
             }
         }
     }
