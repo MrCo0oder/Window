@@ -12,7 +12,7 @@ android {
         minSdk 24
         targetSdk 33
         versionCode 1
-        versionName '1.0.0'
+        versionName '1.0.3'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -54,7 +54,7 @@ afterEvaluate {
 
                 groupId = 'com.github.MrCo0oder'
                 artifactId = 'window'
-                version = '1.0.0'
+                version = '1.0.3'
             }
         }
     }
