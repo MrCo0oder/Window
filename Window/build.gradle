@@ -11,6 +11,8 @@ android {
     defaultConfig {
         minSdk 24
         targetSdk 33
+        versionCode 1
+        versionName '1.0.0'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -43,4 +45,17 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.airbnb.android:lottie:6.1.0'
+}
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.github.MrCo0oder'
+                artifactId = 'window'
+                version = '1.0.0'
+            }
+        }
+    }
 }
