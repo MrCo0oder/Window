@@ -11,8 +11,6 @@ android {
     defaultConfig {
         minSdk 24
         targetSdk 33
-        versionCode 6
-        versionName '1.0.4'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -54,7 +52,7 @@ afterEvaluate {
 
                 groupId = 'com.github.MrCo0oder'
                 artifactId = 'window'
-                version = '1.0.4'
+                version = '1.0.5'
             }
         }
     }
