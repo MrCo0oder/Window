@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CustomDialog</string>
+    <string name="dialog_gamed">Dialog Gamed</string>
+    <string name="this_is_a_nice_multi_line_body">This is a \nnice multi-line body.😎</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="alert_dialog">Alert Dialog</string>
+    <string name="loading_dialog">Loading Dialog</string>
+    <string name="background_color">Background Color</string>
+</resources>

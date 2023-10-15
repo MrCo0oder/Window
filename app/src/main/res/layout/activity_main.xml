@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/background_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/background_color" />
+
+            <include
+                android:id="@+id/background_layout"
+                layout="@layout/radio_layout" />
+
+            <TextView
+                android:id="@+id/icon_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="icon:" />
+
+            <include
+                android:id="@+id/icon_layout"
+                layout="@layout/radio_layout" />
+
+            <TextView
+                android:id="@+id/title_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title:" />
+
+            <include
+                android:id="@+id/title_layout"
+                layout="@layout/radio_layout" />
+
+            <TextView
+                android:id="@+id/body_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="body:" />
+
+            <include
+                android:id="@+id/body_layout"
+                layout="@layout/radio_layout" />
+
+            <TextView
+                android:id="@+id/btn_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buttons:" />
+
+            <include
+                android:id="@+id/btns_layout"
+                layout="@layout/radio_layout" />
+
+            <TextView
+                android:id="@+id/dismiss_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dismissable:" />
+
+            <include
+                android:id="@+id/dismissable_layout"
+                layout="@layout/radio_layout" />
+
+            <TextView
+                android:id="@+id/position_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position:" />
+
+            <include
+                android:id="@+id/position_layout"
+                layout="@layout/radio_layout" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="And more...."
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/alert_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/alert_dialog"
+            app:layout_constraintEnd_toEndOf="@+id/loading_button"
+            app:layout_constraintStart_toEndOf="@+id/loading_button"
+            app:layout_constraintStart_toStartOf="@+id/loading_button"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/loading_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading_dialog"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alert_button" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

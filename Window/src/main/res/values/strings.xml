@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="this_is_a_custom_loading_dialog">this is a custom loading dialog!</string>
+</resources>
