@@ -49,7 +49,7 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            release(MavenPublication) {
+            maven(MavenPublication) {
                 from components.release
 
                 groupId = 'com.github.MrCo0oder'
