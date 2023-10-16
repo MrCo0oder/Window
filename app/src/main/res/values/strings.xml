@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CustomDialog</string>
+    <string name="app_name">Window</string>
     <string name="dialog_gamed">Dialog Gamed</string>
     <string name="this_is_a_nice_multi_line_body">This is a \nnice multi-line body.😎</string>
     <string name="ok">Ok</string>

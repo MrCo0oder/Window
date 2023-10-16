@@ -13,6 +13,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "CustomDialog"
+rootProject.name = "Window"
 include ':app'
 include ':Window'

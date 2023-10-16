@@ -8,12 +8,13 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.example.customdialog.databinding.ActivityMainBinding
 import com.example.window.LoadingPopup
 import com.example.window.Popup
+import com.example.window.R
 import com.example.window.animation
 import com.example.window.background
 import com.example.window.body
+import com.example.window.databinding.ActivityMainBinding
 import com.example.window.gone
 import com.example.window.header
 import com.example.window.icon
@@ -62,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         binding.iconLayout.group.setOnCheckedChangeListener { _, checkedId ->
             when (checkedId) {
                 binding.iconLayout.option1.id -> {
-                    popup.icon(com.example.window.R.drawable.image)
+                    popup.icon(R.drawable.ic_launcher_foreground)
                     popup.animation(null)
                 }
 
